@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonsAPI", "CommonsAPI\CommonsAPI.csproj", "{E2EC8620-9819-479B-8779-EDDF6372053B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonsUI", "CommonsUI\CommonsUI.csproj", "{F2D7C32A-02BF-4E2D-9EE4-9DEAA8CCCE9D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParliamentServices", "CommonsServices\ParliamentServices.csproj", "{E36F3C43-5F61-4DAA-9B79-511481E2BDFB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonsDomain", "CommonsDomain\CommonsDomain.csproj", "{B5116427-9D70-4138-85C5-D3B9AF1E66B5}"
@@ -23,10 +21,6 @@ Global
 		{E2EC8620-9819-479B-8779-EDDF6372053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2EC8620-9819-479B-8779-EDDF6372053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2EC8620-9819-479B-8779-EDDF6372053B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2D7C32A-02BF-4E2D-9EE4-9DEAA8CCCE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2D7C32A-02BF-4E2D-9EE4-9DEAA8CCCE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2D7C32A-02BF-4E2D-9EE4-9DEAA8CCCE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2D7C32A-02BF-4E2D-9EE4-9DEAA8CCCE9D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E36F3C43-5F61-4DAA-9B79-511481E2BDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E36F3C43-5F61-4DAA-9B79-511481E2BDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E36F3C43-5F61-4DAA-9B79-511481E2BDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU

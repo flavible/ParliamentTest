@@ -61,7 +61,7 @@ export class Events extends Component {
     static renderEventsTable(events, weekChange, week, openEvent) {
       return (   
       <div>
-      <input type="week" name="week" value={week} onChange={weekChange}/>
+      <input type="week" name="week" required value={week} onChange={weekChange}/>
       <table className='table'>
         <thead>
           <tr>
