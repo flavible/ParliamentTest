@@ -33,12 +33,20 @@ namespace ParliamentServices
                     string displayAs = GetXmlValue(xnode, "DisplayAs");
                     string listAs = GetXmlValue(xnode, "ListAs");
                     string fullTitle = GetXmlValue(xnode, "FullTitle");
-                    DateTime dob = Convert.ToDateTime(GetXmlValue(xnode, "DateOfBirth"));
+                    DateTime? dob;
+                    try
+                    {
+                        dob = Convert.ToDateTime(GetXmlValue(xnode, "DateOfBirth"));
+                    }
+                    catch (Exception e) {
+                        Console.WriteLine(e.Message);
+                        dob = null;
+                    }
                     string gender = GetXmlValue(xnode, "Gender");
                     string party = GetXmlValue(xnode, "Party");
                     string house = GetXmlValue(xnode, "House");
                     string memberFrom = GetXmlValue(xnode, "MemberFrom");
-                    DateTime houseStart = Convert.ToDateTime(GetXmlValue(xnode, "HouseStartDate"));
+                    DateTime? houseStart = Convert.ToDateTime(GetXmlValue(xnode, "HouseStartDate"));
                     return new Member(id, displayAs, listAs, fullTitle, dob, 
                         gender, party, house, memberFrom, houseStart);
                 }

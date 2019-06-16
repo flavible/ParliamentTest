@@ -1,7 +1,5 @@
 ﻿import React, { Component } from 'react';
 import { getWeekNumber, getDateOfISOWeek, getNextDayOfWeek } from './DateFunctions';
-import { Route } from 'react-router';
-import { Home } from './Home';
 
 export class Events extends Component {
   displayName = Events.name
@@ -16,7 +14,7 @@ export class Events extends Component {
     }
 
     weekChange = event => {
-        const { name, value } = event.target;
+        const { value } = event.target;
         this.setState({ events: [], loading: true, week: value });
         var newWeek = value.split("-W");
         var from = getDateOfISOWeek(newWeek[1], newWeek[0]);
@@ -43,7 +41,7 @@ export class Events extends Component {
                 fetch("https://localhost:5001/api/members/" + member.id)
                     .then(response => response.json())
                     .then(data => {
-                        if (members.length == index + 1) {
+                        if (members.length === index + 1) {
                             this.setState({
                                 members: [...this.state.members, data],
                                 loading: false
